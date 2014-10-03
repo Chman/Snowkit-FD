@@ -1,0 +1,11 @@
+<platform name="flow" targets="android,web,windows" debugger="" 
+	external="haxelib" external-capture="android,web,windows" default-project="project.flow">
+  <versions>
+    <version value="1.0">
+      <command name="display" value="flow info $(TargetBuild) --$(BuildConfig) --hxml"/>
+      <command name="build" value="flow build $(TargetBuild) --$(BuildConfig)"/>
+      <command name="run" value="flow launch $(TargetBuild) --with-files"/>
+      <command name="clean" value="flow clean $(TargetBuild)"/>
+    </version>
+  </versions>
+</platform>

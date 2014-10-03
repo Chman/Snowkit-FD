@@ -1,0 +1,20 @@
+{
+  project : {
+    name : 'empty',
+    version : '1.0.0',
+    author : 'snowkit',
+
+    app : {
+      name : 'flow_empty',
+      package : 'org.snowkit.flow',
+    },
+
+    build : {
+      dependencies : {
+      }
+    },
+
+    files : {
+    }
+  }
+}

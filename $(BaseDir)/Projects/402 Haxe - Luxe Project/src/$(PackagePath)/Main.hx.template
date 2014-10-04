@@ -1,0 +1,16 @@
+package $(PackageName);
+
+import luxe.Input;
+
+class Main extends luxe.Game $(CSLB){
+	override function ready() $(CSLB){
+	}
+
+	override function onkeyup(e:KeyEvent) $(CSLB){
+		if(e.keycode == Key.escape)
+			Luxe.shutdown();
+	}
+
+	override function update(dt:Float) $(CSLB){
+	}
+}

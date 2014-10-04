@@ -1,0 +1,5 @@
+class Main $(CSLB){
+	static function main() $(CSLB){
+		trace("hello flow");
+	}
+}

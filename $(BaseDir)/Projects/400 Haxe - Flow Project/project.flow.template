@@ -6,7 +6,7 @@
 
     app : {
       name : 'flow_empty',
-      package : 'org.snowkit.flow',
+      package : 'org.snowkit.flow'
     },
 
     build : {

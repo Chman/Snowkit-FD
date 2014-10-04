@@ -2,16 +2,17 @@
   project : {
     name : 'empty',
     version : '1.0.0',
-    author : 'luxeengine',
+    author : 'snowkit',
 
     app : {
-      name : 'luxe_empty',
-      package : 'com.luxeengine.empty',
+      name : 'snow_empty',
+      package : 'org.snowkit.snow',
+      main : '$(PackageDot)Main'
     },
 
     build : {
       dependencies : {
-        luxe : '*',
+        snow : '*',
       }
     },
 

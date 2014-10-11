@@ -1,4 +1,4 @@
-<platform name="flow" targets="android,web,windows" debugger="" 
+<platform name="flow" targets="android,web,windows" 
 	external="haxelib" external-capture="android,web,windows" default-project="project.flow">
   <versions>
     <version value="1.0">

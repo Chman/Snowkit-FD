@@ -4,7 +4,7 @@
     <version value="1.0">
       <command name="display" value="flow info $(TargetBuild) --$(BuildConfig) --hxml"/>
       <command name="build" value="flow build $(TargetBuild) --$(BuildConfig)"/>
-      <command name="run" value="flow launch $(TargetBuild) --with-files"/>
+      <command name="run" value="flow launch $(TargetBuild) --$(BuildConfig) --with-files"/>
       <command name="clean" value="flow clean $(TargetBuild)"/>
     </version>
   </versions>

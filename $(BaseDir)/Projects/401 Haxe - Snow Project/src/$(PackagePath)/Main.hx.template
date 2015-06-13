@@ -1,31 +1,45 @@
 package $(PackageName);
 
-import snow.Log.log;
+import snow.api.Debug.*;
 import snow.types.Types;
-import snow.render.opengl.GL;
+import snow.modules.opengl.GL;
 
 @:log_as('app')
 class Main extends snow.App $(CSLB){
-	override function config(config:AppConfig):AppConfig $(CSLB){
-		config.window.title = 'snow empty application template';
-		return config;
-	}
 
-	override function ready() $(CSLB){
-		log('ready');
-		app.window.onrender = render;
-	}
+    override function config( config:AppConfig ) : AppConfig $(CSLB){
 
-	override function onkeyup(keycode:Int, _, _, mod:ModState, _, _) $(CSLB){
-		if (keycode == Key.escape)
-			app.shutdown();
-	}
+        config.window.title = 'snow empty application template';
 
-	override function update(delta:Float) $(CSLB){
-	}
+        return config;
 
-	function render(window:snow.window.Window) $(CSLB){
-		GL.clearColor(1.0, 1.0, 1.0, 1.0);
-		GL.clear(GL.COLOR_BUFFER_BIT);
-	}
+    }
+
+    override function ready() $(CSLB){
+
+        log('ready');
+
+        app.window.onrender = render;
+
+    }
+
+    override function onkeyup( keycode:Int, _,_, mod:ModState, _,_ ) $(CSLB){
+
+        if( keycode == Key.escape ) $(CSLB){
+            app.shutdown();
+        }
+
+    }
+
+    override function update( delta:Float ) $(CSLB){
+
+    }
+
+    function render( window:snow.system.window.Window ) $(CSLB){
+
+        GL.clearColor(1.0, 1.0, 1.0, 1.0);
+        GL.clear(GL.COLOR_BUFFER_BIT);
+
+    }
+
 }
